@@ -9,11 +9,11 @@
 }
 
 body {
-  background-color: #11131E;
+  background-color: #11131e;
 }
 
 .wrapper {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 45%;
   min-width: 550px;
   padding: 30px;
@@ -24,7 +24,7 @@ body {
   border-radius: 8px;
 }
 .wrapper .output {
-  background-color: #EEF3F8;
+  background-color: #eef3f8;
   width: 100%;
   min-height: 250px;
   padding: 20px 0;
@@ -33,4 +33,32 @@ body {
   position: relative;
   display: grid;
   place-items: center;
+}
+.wrapper .output #blob {
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(#11131e, #11131e);
+  box-shadow: 15px 20px 30px rgba(0, 0, 0, 0.15);
+}
+.wrapper .dimensions {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 20px 0 40px 0;
+}
+.wrapper .dimensions div label {
+  font-weight: 500;
+}
+.wrapper .dimensions div input[type=number] {
+  height: 40px;
+  width: 80px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #A0A0B0;
+  border-radius: 3px;
+}
+.wrapper .dimensions div input[type=number]:focus {
+  background-color: #F1F5FA;
+  border-color: #025EAA;
+  color: #025EAA;
 }/*# sourceMappingURL=style.css.map */
