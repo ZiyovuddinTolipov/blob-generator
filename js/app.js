@@ -8,7 +8,7 @@ let endTime = null;
 
 function startTimer() {
     startTime = new Date();
-    console.log("Birinchi bosildi.");
+    // console.log("start Timer");
 }
 
 function endTimer() {
@@ -24,10 +24,10 @@ function endTimer() {
     endTime = null;
 }
 function endTimer2() {
-    if (!startTime) {
-        console.log("Bosqichni boshlashdan oldin tugmaga bosmadingiz.");
-        return;
-    }
+    // if (!startTime) {
+    //     // console.log("change ");
+    //     return;
+    // }
     endTime = new Date();
     let duration = (endTime - startTime) / 1000;
     // console.log("Keyingi bosildi.");
