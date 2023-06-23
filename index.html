@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blob Generator</title>
 </head>
-<meta name="description" content="Author Ziyovuddin Tolipov, Blob generator app using HTML , SCSS , and JS">
+<meta name="description" content="Author Ziyovuddin Tolipov, Blob generator app using HTML , SCSS , and JS" />
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" href="./css/style.css" />
 
-<link rel="stylesheet" href="style.css">
 <body>
     <div class="wrapper">
         <div class="output">
@@ -16,26 +18,41 @@
         </div>
         <div class="dimensions">
             <div>
-                <label for="blob-height">
-                    Height
-                </label>
-                <input type="number" value="200" id="blob-height">
+                <label for="blob-height"> Height </label>
+                <input type="number" value="200" id="blob-height" />
             </div>
             <div>
-                <label for="blob-width">
-                    Height
-                </label>
-                <input type="number" value="200" id="blob-width">
+                <label for="blob-width"> Height </label>
+                <input type="number" value="200" id="blob-width" />
             </div>
         </div>
         <div class="slider">
-            <input type="range" value="30">
-            <input type="range" value="80">
-            <input type="range" value="60">
-            <input type="range" value="40">
+            <input type="range" value="30" />
+            <input type="range" value="80" />
+            <input type="range" value="60" />
+            <input type="range" value="40" />
         </div>
-        <input type="text" class="css-code" readonly>
+        <input type="text" class="css-code" id="css-code" readonly />
         <button id="copy">Copy</button>
     </div>
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <!-- <img src="..." class="rounded me-2" alt="..."> -->
+                <strong class="me-auto">Tolipov</strong>
+                <input type="text" id="copyTime" value="11 mins ago" readonly>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">Code copied !</div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+        const toastLiveExample = document.getElementById("liveToast");
+        const copyBtn = document.getElementById("copy");
+    </script>
 </body>
+
 </html>
